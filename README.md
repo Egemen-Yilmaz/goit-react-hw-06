@@ -7,7 +7,6 @@ Modern, responsive ve kullanıcı dostu bir iletişim yönetim uygulaması. Redu
 [![Vite](https://img.shields.io/badge/Vite-7.x-646CFF.svg)](https://vitejs.dev/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-![Demo Screenshot](https://via.placeholder.com/800x400/ecf0f1/2c3e50?text=Iletisim+Kitabi+Demo)
 
 ---
 
