@@ -13,7 +13,7 @@ Modern, responsive ve kullanıcı dostu bir iletişim yönetim uygulaması. Redu
 
 ## 🚀 Canlı Demo
 
-**[Vercel'de Görüntüle →](https://your-project-url.vercel.app)**
+**[Vercel'de Görüntüle →](goit-react-hw-06-beryl-one.vercel.app)**
 
 ---
 
@@ -399,7 +399,7 @@ Katkılarınızı bekliyoruz!
 
 ## 📄 Lisans
 
-Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasına bakın.
+Bu proje MIT lisansı altında lisanslanmıştır.
 
 ---
 

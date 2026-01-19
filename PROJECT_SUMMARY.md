@@ -329,7 +329,7 @@ npm run build
 **Geliştirici:** Egemen Yılmaz  
 **Email:** your-email@example.com  
 **GitHub:** [@Egemen-Yilmaz](https://github.com/Egemen-Yilmaz)  
-**LinkedIn:** [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
+**LinkedIn:** [linkedin.com/in/yourprofile](https://www.linkedin.com/in/egemen-yılmaz/)
 
 ---
 
@@ -360,8 +360,7 @@ npm run build
 - [x] package.json güncellendi
 - [x] Build test edildi
 - [x] Cross-browser test edildi
-- [ ] Vercel'e deploy edildi
-- [ ] Demo video hazırlandı (opsiyonel)
+- [x] Vercel'e deploy edildi
 
 ---
 
