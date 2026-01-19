@@ -10,11 +10,6 @@ Modern, responsive ve kullanıcı dostu bir iletişim yönetim uygulaması. Redu
 
 ---
 
-## 🚀 Canlı Demo
-
-**[Vercel'de Görüntüle →](goit-react-hw-06-beryl-one.vercel.app)**
-
----
 
 ## ✨ Özellikler
 
