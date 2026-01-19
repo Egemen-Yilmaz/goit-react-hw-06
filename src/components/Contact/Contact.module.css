@@ -1,0 +1,167 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.25rem 1.5rem;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border: 1px solid var(--border-light);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-sm);
+  animation: contactSlideIn 0.3s ease-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(180deg, var(--secondary-color), var(--success-color));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.item:hover {
+  transform: translateX(4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--secondary-color);
+}
+
+.item:hover::before {
+  opacity: 1;
+}
+
+@keyframes contactSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex-grow: 1;
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  color: var(--secondary-color);
+  transition: transform 0.3s ease;
+}
+
+.item:hover .icon {
+  transform: scale(1.1);
+}
+
+.name,
+.number {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--text-primary);
+  letter-spacing: -0.2px;
+}
+
+.number {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  font-family: 'Courier New', monospace;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.deleteButton {
+  background: linear-gradient(135deg, var(--accent-color), #c0392b);
+  color: white;
+  border: none;
+  padding: 0.625rem 1.25rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+}
+
+.deleteButton::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.deleteButton:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+.deleteButton:hover {
+  background: linear-gradient(135deg, #c0392b, var(--accent-color));
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.deleteButton:active {
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .item {
+    padding: 1rem;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .actions {
+    width: 100%;
+  }
+
+  .deleteButton {
+    width: 100%;
+    padding: 0.75rem;
+  }
+
+  .item:hover {
+    transform: translateX(0);
+  }
+}

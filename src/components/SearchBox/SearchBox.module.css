@@ -1,0 +1,60 @@
+.searchBox {
+  padding: 1.5rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.3s ease;
+  position: relative;
+}
+
+.searchBox:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.searchBox input {
+  width: 100%;
+  padding: 0.875rem 1rem 0.875rem 2.75rem;
+  border: 2px solid var(--border-light);
+  border-radius: 6px;
+  font-size: 1rem;
+  color: var(--text-primary);
+  background-color: var(--bg-secondary);
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%237f8c8d' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cpath d='m21 21-4.35-4.35'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 0.875rem center;
+  background-size: 1.25rem;
+}
+
+.searchBox input:focus {
+  border-color: var(--secondary-color);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+  background-color: #fff;
+}
+
+.searchBox input::placeholder {
+  color: var(--text-light);
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .searchBox {
+    padding: 1.25rem;
+  }
+
+  .searchBox input {
+    padding: 0.75rem 1rem 0.75rem 2.5rem;
+  }
+}
